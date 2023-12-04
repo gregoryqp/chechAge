@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100&family=Hanken+Grotesk:wght@100&family=Montserrat:wght@100&family=Outfit:wght@300;400;600&family=Overpass:ital,wght@0,400;0,900;1,500&family=Poppins:ital,wght@0,700;1,400;1,800&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="formFieldConainer">
+        <div class="formField">
+          <label for="dayOfBirth">DAY</label>
+          <input
+            type="text"
+            maxlength="2"
+            size="2"
+            placeholder="DD"
+            class="dateOfBirth"
+            id="dayOfBirth"
+          />
+        </div>
+
+        <div class="formField">
+          <label for="monthOfBirth">MONTH</label>
+          <input
+            type="text"
+            maxlength="2"
+            size="2"
+            placeholder="MM"
+            class="dateOfBirth"
+            id="monthOfBirth"
+          />
+        </div>
+
+        <div class="formField">
+          <label for="yearOfBirth">YEAR</label>
+          <input
+            type="text"
+            maxlength="4"
+            minlength="4"
+            size="4"
+            placeholder="YYYY"
+            required
+            class="dateOfBirth"
+            id="yearOfBirth"
+          />
+        </div>
+      </div>
+
+      <div class="buttonArea">
+        <hr />
+        <button class="checkAgeButton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="46"
+            height="44"
+            viewBox="-24 -30 100 100"
+          >
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path
+                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+
+      <div class="outputs">
+        <p class="dateOutput" id="yearsOutput">--</p>
+        <p class="outputName">years</p>
+      </div>
+
+      <div class="outputs">
+        <p class="dateOutput" id="monthsOutput">--</p>
+        <p class="outputName">months</p>
+      </div>
+
+      <div class="outputs">
+        <p class="dateOutput" id="daysOutput">--</p>
+        <p class="outputName">days</p>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Grzegorz Niewitowski</a>.
+    </div>
+  </body>
+</html>
