@@ -94,6 +94,13 @@ label {
 }
 
 @media (max-width: 1080px) {
+
+  .mainContainer {
+  width: 450px;
+  height: 600px;
+  
+}
+  
 /*   body {
     margin-top: 20vh;
   }
